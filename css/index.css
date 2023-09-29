@@ -44,6 +44,10 @@ p, a, h1, h2 {
     background-color: transparent;
 }
 
+.colored-text {
+    color: #9340ff;
+}
+
 div {
     /* overflow: hidden; */
 }
