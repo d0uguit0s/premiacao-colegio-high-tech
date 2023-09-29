@@ -3,6 +3,14 @@
     src: url("../fonts/CodecProExtraBold.ttf");
 }
 
+body{
+    background:#101728;
+}
+
+.vh-personalized {
+    height: 80vh!important
+}
+
 p, a, h1, h2 {
     font-family: CodecProExtraBold;
 	color: #fff;
@@ -33,7 +41,7 @@ i {
     background-color: #AE3FD7; /* For browsers that do not support gradients */
     background: linear-gradient(to right, var(--myColor1), var(--myColor2));
     transition-property: --myColor1, --myColor2, color, background-color;
-    transition-duration: 2s;
+    transition-duration: 900ms;
     transition-delay: 0s;
 }
 
@@ -58,101 +66,3 @@ i {
 .w-perso {
     width: 30%!important;
 }
-
-div {
-    /* overflow: hidden; */
-}
-
-body{
-    /* flex: 1 1 100vw; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    background:#101728;
-    /* padding: 30px 160px 0 160px; */
-}
-
-header, nav, main, aside, footer, div {
-    /* display: flex; */
-    /* margin: 3px; */
-    /* background: #a1a1a1; */
-}
-
-header {
-    /* flex: 1 1 100vw; */
-    /* flex-direction: row; */
-    /* height: 100px; */
-    /* justify-content: space-between; */
-    /* margin-bottom: 70px; */
-}
-
-/* header div {
-    flex: 1 1 100vw;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-}
-.logo-geolan {
-    width: autp;
-} */
-/* header div img {
-    max-width: 100px;
-} */
-
-/* main {
-    flex: 1 1 100vw;
-    height: calc(100vh - 112px);
-    flex-direction: column;
-}
-.text-title {
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
-}
-.text-title p {
-    line-height: 50px;
-    font-size: 40px;
-}
-.page {
-    flex: 1 1 100vw;
-    align-items: center;
-    margin-bottom: 100px;
-}
-.text-button {
-    height: 50%;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.text-button p {
-    word-wrap: break-word;
-    font-size: 35px;
-}
-
-.text-button a {
-    text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-    color: #0F1819;
-}
-
-main div img {
-    max-width:100%;
-    max-height:400px;
-    width: auto;
-    height: auto;
-    border-radius: 10%;
-}
-.image-celular {
-    justify-content: flex-end;
-    align-items: center;
-    flex-grow: 100;
-    background-image: url('../assets/efeito.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-footer {
-    flex: 1 1 100vw;
-    height: 100px;
-}
-*/
