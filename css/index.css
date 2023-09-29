@@ -9,6 +9,10 @@ p, a, h1, h2 {
     margin-bottom: 0;
 }
 
+i {
+	color: #fff;
+}
+
 @property --myColor1 {
     syntax: '<color>';
     initial-value: #AE3FD7;
@@ -46,6 +50,13 @@ p, a, h1, h2 {
 
 .colored-text {
     color: #9340ff;
+}
+
+.w-30 {
+    width: 30%!important;
+}
+.w-perso {
+    width: 30%!important;
 }
 
 div {
