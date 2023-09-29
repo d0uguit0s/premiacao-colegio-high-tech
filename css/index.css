@@ -1,20 +1,22 @@
 @font-face{
     font-family: CodecProExtraBold;
-
-    /*Caso a fonte esteja na mesma pasta*/
     src: url("../fonts/CodecProExtraBold.ttf");
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-p, a, h1 {
+p, a, h1, h2 {
     font-family: CodecProExtraBold;
 	color: #fff;
     margin-bottom: 0;
+}
+
+.button-link {
+    text-decoration: none;
+    text-align: center;
+    width: 180px;
+    height: auto;
+    background-color: #AE3FD7; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #AE3FD7, #E23D89);
+    padding-top: 20px;
 }
 
 div {
@@ -85,14 +87,7 @@ header {
     word-wrap: break-word;
     font-size: 35px;
 }
-.button-link {
-    width: 280px;
-    height: auto;
-    background-color: #AE3FD7; For browsers that do not support gradients 
-    background-image: linear-gradient(to right, #AE3FD7, #E23D89);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 .text-button a {
     text-decoration: none;
     font-size: 30px;
