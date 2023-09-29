@@ -9,14 +9,39 @@ p, a, h1, h2 {
     margin-bottom: 0;
 }
 
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #AE3FD7;
+    inherits: false;
+}
+
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #E23D89;
+    inherits: false;
+}
+
 .button-link {
     text-decoration: none;
     text-align: center;
-    width: 180px;
+    width: 280px;
     height: auto;
     background-color: #AE3FD7; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, #AE3FD7, #E23D89);
-    padding-top: 20px;
+    background: linear-gradient(to right, var(--myColor1), var(--myColor2));
+    transition-property: --myColor1, --myColor2, color, background-color;
+    transition-duration: 2s;
+    transition-delay: 0s;
+}
+
+.button-link:hover {
+    background-color: #E23D89; /* For browsers that do not support gradients */
+    --myColor1: #E23D89;
+    --myColor2: #AE3FD7;
+    color: #000;
+}
+.hightlight {
+    color: #9340ff;
+    background-color: transparent;
 }
 
 div {
