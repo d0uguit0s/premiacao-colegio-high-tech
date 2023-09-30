@@ -7,50 +7,135 @@ body{
     background:#101728;
 }
 
-.vh-personalized {
-    height: 80vh!important
-}
-
 p, a, h1, h2 {
     font-family: CodecProExtraBold;
 	color: #fff;
     margin-bottom: 0;
 }
 
-i {
-	color: #fff;
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7em;
+    margin-top: 1.7em;
 }
 
-@property --myColor1 {
-    syntax: '<color>';
-    initial-value: #AE3FD7;
-    inherits: false;
+.cabecalho {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@property --myColor2 {
-    syntax: '<color>';
-    initial-value: #E23D89;
-    inherits: false;
+h1 {
+    line-height: 1.2em;
 }
 
+.page-full-1 {
+    display: none!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-mobile-1 {
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+main {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+}
+
+.text-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.text-image h2 {
+    font-size: 1.4em;
+}
+
+.image-sizing-1 {
+    max-width: 40%;
+}
+
+main img {
+    border-radius: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button Link */
 .button-link {
+    font-size: 1.3em;
+    padding: 1em 1em 1em 1em;
+    border-radius: 1em;
     text-decoration: none;
     text-align: center;
-    width: 280px;
-    height: auto;
+    width: 10.8em;
     background-color: #AE3FD7; /* For browsers that do not support gradients */
     background: linear-gradient(to right, var(--myColor1), var(--myColor2));
     transition-property: --myColor1, --myColor2, color, background-color;
     transition-duration: 900ms;
     transition-delay: 0s;
 }
-
+@property --myColor1 {
+    syntax: '<color>';
+    initial-value: #AE3FD7;
+    inherits: false;
+}
+@property --myColor2 {
+    syntax: '<color>';
+    initial-value: #E23D89;
+    inherits: false;
+}
 .button-link:hover {
     background-color: #E23D89; /* For browsers that do not support gradients */
     --myColor1: #E23D89;
     --myColor2: #AE3FD7;
     color: #000;
 }
+
+.page-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-2 figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.text-primary {
+    font-size: 1.7em;
+}
+
+.text-secondary {
+    font-size: 1.1em;
+}
+
+i {
+	color: #fff;
+}
+
 .hightlight {
     color: #9340ff;
     background-color: transparent;
@@ -60,9 +145,340 @@ i {
     color: #9340ff;
 }
 
-.w-30 {
+.page-full-3 {
+    display: none!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-mobile-3 {
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.page-mobile-3 h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.page-mobile-3 p {
+    font-size: 1.2em;
+}
+
+.image-sizing-2 {
+    max-width: 70%;
+}
+
+.text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.page-full-3 h2 {
+    width: 50%;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+.page-full-3 p {
+    font-size: 1.5em;
+}
+
+/* ALL SCREENS */
+@media (max-width: 600px) {
+    .cabecalho-full {
+        display: none!important;
+    }
+    
+    .cabecalho-mobile {
+        display: block!important;
+    }
+
+    .image-full {
+        display: none!important;
+    }
+    
+    .image-mobile {
+        display: block!important;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .page-full-3 {
+        display: none!important;
+    }
+    
+    .page-mobile-3 {
+        display: flex!important;
+    }
+}
+
+@media  (min-width: 601px) and (max-width: 768px) {
+    .cabecalho-full {
+        display: flex!important;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .cabecalho-mobile {
+        display: none!important;
+    }
+
+    .image-full {
+        display: block!important;
+    }
+    
+    .image-mobile {
+        display: none!important;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .text-image h2 {
+        font-size: 2em;
+    }
+    
+    .button-link {
+        font-size: 1.5em;
+    }
+
+    .page-mobile-3 h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    .page-mobile-3 p {
+        font-size: 1.5em;
+    }
+
+    .image-sizing-2 {
+        max-width: 60%;
+    }
+}
+@media (min-width: 769px) and  (max-width: 1024px) {
+    .cabecalho {
+        width: 70%;
+    }
+
+    .cabecalho-full {
+        display: flex!important;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .cabecalho-mobile {
+        display: none!important;
+    }
+
+    .image-full {
+        display: block!important;
+    }
+    
+    .image-mobile {
+        display: none!important;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .page-full-1 {
+        display: flex!important;
+    }
+    .page-mobile-1 {
+        display: none!important;
+    }
+
+    .text-button {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .image-sizing-1 {
+        max-width: 30%;
+    }
+
+    .text-button h2 {
+        font-size: 2em;
+    }
+    
+    .button-link {
+        font-size: 1.5em;
+        width: 9em;
+    }
+
+    .page-full-3 {
+        display: flex!important;etween;
+        align-items: center;
+    }
+    
+    .page-mobile-3 {
+        display: none!important;
+    }
+    
+    .image-sizing-2 {
+        max-width: 100%;
+    }
+
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .cabecalho {
+        width: 65%;
+    }
+    .cabecalho-full {
+        display: flex!important;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .cabecalho-mobile {
+        display: none!important;
+    }
+
+    .image-full {
+        display: block!important;
+    }
+    
+    .image-mobile {
+        display: none!important;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .page-full-1 {
+        display: flex!important;
+    }
+    .page-mobile-1 {
+        display: none!important;
+    }
+
+    .text-button {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .text-button h2 {
+        font-size: 2em;
+    }
+    
+    .button-link {
+        font-size: 1.5em;
+        width: 9em;
+    }
+
+    .page-mobile-3 h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    .page-mobile-3 p {
+        font-size: 1.8em;
+    }
+
+    .image-sizing-2 {
+        max-width: 50%;
+    }
+}
+@media (min-width: 1201px) {
+    .cabecalho {
+        width: 65%;
+    }
+
+    .cabecalho-full {
+        display: flex!important;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .cabecalho-mobile {
+        display: none!important;
+    }
+
+    .image-full {
+        display: block!important;
+    }
+    
+    .image-mobile {
+        display: none!important;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .page-full-1 {
+        display: flex!important;
+    }
+    .page-mobile-1 {
+        display: none!important;
+    }
+
+    .text-button {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .text-button h2 {
+        font-size: 2em;
+    }
+    
+    .button-link {
+        font-size: 1.5em;
+        width: 9em;
+    }
+
+    .page-2 figure {
+        gap: 2em;
+    }
+
+    .text-primary {
+        font-size: 3.4em;
+        padding: 0 5em;
+    }
+    
+    .text-secondary {
+        font-size: 2.1em;
+        padding: 0 5em;
+    }
+
+    .page-mobile-3 h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    .page-mobile-3 p {
+        font-size: 1.8em;
+    }
+
+    .image-sizing-2 {
+        max-width: 50%;
+    }
+}
+
+/* .vh-personalized {
+    height: 80vh!important
+} */
+
+/* .w-30 {
     width: 30%!important;
 }
 .w-perso {
     width: 30%!important;
-}
+} */
