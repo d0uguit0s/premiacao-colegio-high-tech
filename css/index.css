@@ -18,7 +18,6 @@ p, a, h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.7em;
     margin-top: 1.7em;
 }
 
@@ -55,7 +54,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 5em;
+    gap: 10em;
+    margin: 5em 0;
 }
 
 .text-image {
@@ -160,6 +160,17 @@ i {
     gap: 1.5em;
 }
 
+/* .page-full-3 h2 {
+    width: 50%;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.page-full-3 p {
+    font-size: 1.5em;
+    text-align: center;
+} */
+
 .page-mobile-3 h2 {
     font-size: 2em;
     text-align: center;
@@ -167,6 +178,7 @@ i {
 
 .page-mobile-3 p {
     font-size: 1.2em;
+    text-align: center;
 }
 
 .image-sizing-2 {
@@ -179,13 +191,56 @@ i {
     gap: 2em;
 }
 
-.page-full-3 h2 {
-    width: 50%;
-    font-size: 3em;
-    margin-bottom: 1em;
+.contato-mobile {
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
 }
-.page-full-3 p {
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo-title h1 {
     font-size: 1.5em;
+}
+
+.infos-contato {
+    text-align: center;
+}
+
+.infos-contato h2 {
+    font-size: 2em;
+}
+
+.infos-contato p, .infos-contato i {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.icon-social {
+    display: inline;
+}
+
+.contato-full {
+    display: none!important;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 1em;
 }
 
 /* ALL SCREENS */
@@ -253,7 +308,6 @@ i {
 
     .page-mobile-3 h2 {
         font-size: 2.5em;
-        text-align: center;
     }
     
     .page-mobile-3 p {
@@ -265,10 +319,6 @@ i {
     }
 }
 @media (min-width: 769px) and  (max-width: 1024px) {
-    .cabecalho {
-        width: 70%;
-    }
-
     .cabecalho-full {
         display: flex!important;
         flex-direction: row;
@@ -318,24 +368,28 @@ i {
         width: 9em;
     }
 
-    .page-full-3 {
-        display: flex!important;etween;
-        align-items: center;
+    .page-mobile-3 h2 {
+        font-size: 3em;
     }
     
-    .page-mobile-3 {
-        display: none!important;
+    .page-mobile-3 p {
+        font-size: 1.5em;
     }
     
     .image-sizing-2 {
-        max-width: 100%;
+        max-width: 45%;
+    }
+
+    .contato-mobile {
+        display: none!important;
+    }
+    
+    .contato-full {
+        display: flex!important;
     }
 
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .cabecalho {
-        width: 65%;
-    }
     .cabecalho-full {
         display: flex!important;
         flex-direction: row;
@@ -380,25 +434,28 @@ i {
         font-size: 1.5em;
         width: 9em;
     }
-
+    
     .page-mobile-3 h2 {
         font-size: 3em;
-        text-align: center;
     }
-    
+
     .page-mobile-3 p {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .image-sizing-2 {
-        max-width: 50%;
+        max-width: 45%;
+    }
+
+    .contato-mobile {
+        display: none!important;
+    }
+    
+    .contato-full {
+        display: flex!important;
     }
 }
 @media (min-width: 1201px) {
-    .cabecalho {
-        width: 65%;
-    }
-
     .cabecalho-full {
         display: flex!important;
         flex-direction: row;
@@ -424,6 +481,7 @@ i {
 
     .page-full-1 {
         display: flex!important;
+        width: 100%;
     }
     .page-mobile-1 {
         display: none!important;
@@ -458,27 +516,38 @@ i {
         padding: 0 5em;
     }
 
-    .page-mobile-3 h2 {
-        font-size: 3em;
-        text-align: center;
+    .page-full-3 {
+        display: flex!important;
+        align-items: center;
     }
     
-    .page-mobile-3 p {
+    .page-mobile-3 {
+        display: none!important;
+    }
+
+    .text-side {
+        width: 50%;
+    }
+
+    .page-full-3 h2 {
+        font-size: 3em;
+        text-align: left;
+    }
+    
+    .page-full-3 p {
         font-size: 1.8em;
+        text-align: left;
     }
 
     .image-sizing-2 {
         max-width: 50%;
     }
-}
 
-/* .vh-personalized {
-    height: 80vh!important
-} */
-
-/* .w-30 {
-    width: 30%!important;
+    .contato-mobile {
+        display: none!important;
+    }
+    
+    .contato-full {
+        display: flex!important;
+    }
 }
-.w-perso {
-    width: 30%!important;
-} */
